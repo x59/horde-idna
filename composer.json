@@ -1,5 +1,5 @@
 {
-    "name": "horde/horde-idna",
+    "name": "x59/horde-idna",
     "description": "IDNA backend normalization package",
     "type": "library",
     "homepage": "https://pear.horde.org",
@@ -13,16 +13,13 @@
     ],
     "version": "1.0.4",
     "time": "2016-02-01",
-    "repositories": [
-        {
-            "type": "pear",
-            "url": "https://pear.horde.org"
-        }
-    ],
+    "autoload": {
+        "classmap": "lib/"
+    },
     "require": {
         "php": ">=5.3.0,<=8.0.0alpha1",
-        "pear-pear.horde.org/Horde_Exception": ">=2.0.0@stable,<=3.0.0alpha1@stable",
-        "pear-pear.horde.org/Horde_Util": ">=2.0.0@stable,<=3.0.0alpha1@stable"
+        "x59/horde-exception": ">=2.0.0@stable,<=3.0.0alpha1@stable",
+        "x59/horde-util": ">=2.0.0@stable,<=3.0.0alpha1@stable"
     },
     "suggest": {
         "ext-intl": "*"
